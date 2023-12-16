@@ -20,7 +20,7 @@ public class Application {
 		System.out.println("Hello World.......");
 		return "Hello World....";
 	}
-	@GetMapping("/msgBranch")
+	@GetMapping("/msgBranchModified")
 	public String getBranchMessage() {
 		System.out.println("Hello getBranchMessage World.......");
 		return "Hello getBranchMessage World....";
