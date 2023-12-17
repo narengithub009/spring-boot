@@ -22,8 +22,12 @@ public class Application {
 	}
 	@GetMapping("/msgBranch")
 	public String getBranchMessage() {
-		
-		System.out.println("Hello getBranchMessage World conflict.......");
+System.out.println("Hello getBranchMessage World conflict.......");
+
+		System.out.println("Hello getBranchMessage World.......");
+		System.out.println("Hello getBranchMessage World.......");
+		System.out.println("Hello getBranchMessage World.......");
+
 		return "Hello getBranchMessage World....";
 	}
 }
