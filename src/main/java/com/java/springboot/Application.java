@@ -14,15 +14,16 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-	
+
 	@GetMapping("/msg")
 	public String getMessage() {
 		System.out.println("Hello World.......");
 		return "Hello World....";
 	}
+
 	@GetMapping("/msgBranch")
 	public String getBranchMessage() {
-System.out.println("Hello getBranchMessage World conflict.......");
+		System.out.println("Hello getBranchMessage World conflict.......");
 
 		System.out.println("Hello getBranchMessage World.......");
 		System.out.println("Hello getBranchMessage World.......");
