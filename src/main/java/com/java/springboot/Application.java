@@ -21,5 +21,11 @@ public class Application {
 		return "Hello World....";
 	}
 
-	
+	@GetMapping("/msgBranch")
+	public String getBranchMessage() {
+		
+		System.out.println("Hello  World.......");
+		
+		return "Hello getBranchMessage World....";
+	}
 }
