@@ -28,6 +28,6 @@ public class Application {
 		
 		System.out.println("Springboot framework Hello  World.......");
 		
-		return new ResponseEntity("Hello getBranchMessage World....",HttpStatus.OK);
+		return new ResponseEntity<String>("Hello getBranchMessage World....",HttpStatus.OK);
 	}
 }
