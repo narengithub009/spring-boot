@@ -26,7 +26,7 @@ public class Application {
 	@GetMapping("/msgBranch")
 	public ResponseEntity<String> getBranchMessage() {
 		
-		System.out.println("Springboot Hello  World.......");
+		System.out.println("Springboot framework Hello  World.......");
 		
 		return new ResponseEntity("Hello getBranchMessage World....",HttpStatus.OK);
 	}
