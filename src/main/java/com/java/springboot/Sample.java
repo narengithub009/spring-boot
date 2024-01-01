@@ -23,6 +23,7 @@ public class Sample {
 		map.put(37, "Narender");
 		map.put(36, "Neeraja");
 		map.put(11,"Aswitha");
+		map.put(12,"Shreyanvi");
 		
 		for(Map.Entry<Integer, String> entries:map.entrySet()) {
 			System.out.println(entries.getKey()+" "+entries.getValue());
