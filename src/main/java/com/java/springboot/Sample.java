@@ -5,19 +5,25 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Sample {
 	
 	public static void main(String[] args) {
 		
-		List<String> list=new ArrayList<String>();
+		List<String> list=new CopyOnWriteArrayList<String>();
 		list.add("Narender");
 		list.add("Neeraja");
 		list.add("Aswitha");
 		list.add("Anny");
 		list.add("Mittu");
 		
-		list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+		for(String s:list) {
+			System.out.println(s);
+			list.add("Funny");
+		}
+		
+		//list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 		
 		Map<Integer, String> map=new HashMap<Integer, String>();
 		map.put(37, "Narender");
