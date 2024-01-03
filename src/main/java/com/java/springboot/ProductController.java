@@ -16,6 +16,6 @@ public class ProductController {
 	@GetMapping("/products")
 	public ResponseEntity<List<String>> getProducts() {
 		
-		return  new ResponseEntity(Arrays.asList("Phone","Pen","TV","Books"),HttpStatus.CREATED);
+		return  new ResponseEntity(Arrays.asList("Phone","Pen","TV","Books","Furniture"),HttpStatus.CREATED);
 	}
 }
